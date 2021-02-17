@@ -1,0 +1,98 @@
+*, ::before,::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1rem;
+    font-family: sans-serif;
+    line-height: 35px;
+}
+
+/* barre navigation */
+#navbar{
+    width:35vw;
+    
+}
+
+#navbar .nav-link{
+    list-style: none;
+    padding: 10px 10px 8px 40px;
+}
+#navbar .nav-link:hover{
+    background: rgba(223, 221, 221, 0.5);
+    margin: 0;
+    padding-left: 30px;
+  
+}
+#navbar .nav-link a{
+    text-decoration: none;
+    color:#333;
+    font-size: large;
+    cursor:pointer;
+    display:inline-block;
+}
+
+#navbar header{
+    font-size:30px;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+/* faire toogle au nav */
+
+
+
+/*  grace  a cette kigne le display est fait */
+#main-doc{display:flex;
+}
+
+/* section */
+#section{
+    border-left: 3px solid;
+}
+
+.main-section header{
+    font-weight: bold;
+    font-size:30px;
+    padding: 20px;
+}
+.main-section p{
+    padding-left: 40px;
+    margin-bottom: 14px;
+}
+.main-section ul{
+    padding-left: 100px; 
+}
+.main-section code{
+    background: rgba(236, 234, 234, 0.5);
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin: 20px 20px 20px 70px;
+    display:block;
+}
+
+        @media screen and (max-width:600px){
+            .main-section ul{
+                padding-left: 50px; 
+            }
+            .main-section code{
+                padding: 15px 10px;
+                margin: 20px 20px 20px 40px;
+            }
+            #navbar  header{
+            font-size: 20px;
+            margin-left: 20px;
+            }
+            #navbar .nav-link a{font-size:15px;}
+            #navbar .nav-link{
+                list-style: none;
+                padding: 8px 7px 8px 25px;
+            }
+            .main-section header{
+                font-size:20px;
+        }
+        .main-section p{
+            font-size:17px;
+    }
+    }
